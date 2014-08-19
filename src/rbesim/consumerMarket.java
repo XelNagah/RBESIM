@@ -11,5 +11,30 @@ package rbesim;
  * @author zerg
  */
 public class consumerMarket {
-    
+    private String name;
+    private int ammount;
+
+    public consumerMarket() {
+    }
+        
+    public consumerMarket(String name, int ammount) {
+        this.name = name;
+        this.ammount = ammount;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAmmount(int ammount) {
+        this.ammount = ammount;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAmmount() {
+        return ammount;
+    }
 }

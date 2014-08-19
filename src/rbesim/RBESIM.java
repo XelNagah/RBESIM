@@ -6,6 +6,9 @@
 
 package rbesim;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author zerg
@@ -18,6 +21,9 @@ public class RBESIM {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("Hola");
+        List<consumerMarket> markets = new ArrayList<>();
+        List<producerFactory> producers = new ArrayList<>();
+        List<rawMaterial> materials = new ArrayList<>();
     }
     
 }

@@ -11,5 +11,25 @@ package rbesim;
  * @author zerg
  */
 public class rawMaterial {
-    
+    private String name;
+
+    public rawMaterial() {
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAmmount() {
+        return ammount;
+    }
+
+    public void setAmmount(int ammount) {
+        this.ammount = ammount;
+    }
+    private int ammount;
 }
