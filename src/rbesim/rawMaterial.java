@@ -16,6 +16,11 @@ public class rawMaterial {
     public rawMaterial() {
     }
 
+    public rawMaterial(String name, int ammount) {
+        this.name = name;
+        this.ammount = ammount;
+    }
+
     public String getName() {
         return name;
     }

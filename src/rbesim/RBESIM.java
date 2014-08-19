@@ -7,6 +7,7 @@
 package rbesim;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -24,6 +25,16 @@ public class RBESIM {
         List<consumerMarket> markets = new ArrayList<>();
         List<producerFactory> producers = new ArrayList<>();
         List<rawMaterial> materials = new ArrayList<>();
+        
+        materials.add(new rawMaterial("Metal",1));
+        materials.add(new rawMaterial("Wood",1300));
+        materials.add(new rawMaterial("Cows",60));
+        Iterator itr = materials.iterator();
+        rawMaterial material;
+        while (itr.hasNext()){
+            material = (rawMaterial) itr.next();
+            System.out.println("Name: " + material.getName() + " - " + "Ammount: " + material.getAmmount());
+        }
     }
     
 }
